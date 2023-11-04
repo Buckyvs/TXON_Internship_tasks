@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito Sans', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 25px;   
+    scroll-behavior: smooth;
+    
+}
+
+body{
+    background-color: rgb(36, 41, 42);
+}
+
+#head{
+     width: 100%;
+     height: 100vh;
+     background-image: url(images/home-screen.jpg);
+     background-size: cover;
+     background-position: center;
+     filter: grayscale();
+ }
+
+.container{
+    padding: 1px 3%;
+}
+
+.resize{
+    width: 100px;
+    height: 100px;
+}
+
+nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   flex-wrap: wrap;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #070707;
+    position: absolute;
+    left: 0%;
+    bottom: -3px;
+    transition: 0.4s;
+}
+
+nav ul li a:hover:after{
+    width: 100%;
+}
+
+.header{
+    margin-top: 5%;
+    font-size: 30px;
+}
+.header h1{
+    font-size: 40pxpx;
+    margin-top: 10px;
+    color: #6b6b6b;
+}
+.header h1 span{
+    color: #010202;
+}
+
+/*----about-----*/
+
+#about{
+    padding: 113px 0;
+    color: #6b6b6b;
+
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.col-1{
+    flex-basis: 40%;
+}
+
+.col-1 img{
+    width: 100%;
+    height:  76vh;
+    filter: grayscale();
+    border-radius: 100%;
+}
+
+.col-2{
+    flex-basis: 55%;
+}
+
+.title1{
+    font-size: 50px;
+    color: #6b6b6b;
+    
+}
+
+.title2{
+    font-size: 40px;
+    color: #6b6b6b;
+}
+
+.title3{
+    font-size: 30px;
+}
+
+.Paragraph{
+    font-size: 19px;
+}
+.tablinks{
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+/* Porfolio */
+#portfolio{
+    padding: 30px 0;
+   
+}
+
+.worklist{
+    display: flex;
+    margin-top: 50px;
+    justify-content: space-between;
+   
+}
+.work{
+   border-radius: 10px;
+   position: relative;
+   overflow: hidden;
+}
+.work img{
+    margin-left: 30px;
+    margin-bottom: 50px;
+    width: 800px;
+    height: 450px;
+    border-radius: 10px;
+    display: block;
+    filter: grayscale();
+}
+.layer{
+    margin-bottom: 20px;
+}
+.layer h4{
+    font-size: 40px;
+    color: #6b6b6b;
+    text-align: center;
+}
+
+/*contact*/
+.contactleft{
+    flex-basis: 40%;
+}
+.contactleft p{
+        margin-top: 30px;
+}
+
+.contactright{
+    flex-basis: 40%;
+}
+
+.btn{
+    display: inline-block;
+    background: #c3c3c3;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #010202;
+    padding: 14px 50px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #303030;
+}
+
+.contactright form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #070707;
+    padding: 14px;
+    margin: 15px 0;
+    color: #7d7c7c;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+form button{
+    padding: 14px 60px;
+    font-size: 25px;
+    margin-top: 20px;
+    cursor: pointer;
+}
