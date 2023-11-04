@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  body{
+    background-color: rgb(30, 150, 165);
+    margin-top: 20px;
+    display: grid;
+    justify-content: center;
+  }
+  
+  .title{
+    margin-top: 25px;
+    justify-content: center;
+    text-align: center;
+    color: #ffff;
+  }
+  
+  .to-do-list{
+    width: 200px;
+    height: 5vh;
+    padding: 20px;
+    background-color: rgb(108, 167, 178);
+  }
+  
+  
+  .list-head{
+    display: flex;
+    gap: 10px;
+  
+  }
+  
+  .input-task{
+    padding: 5px;
+    border: 1px #0a0909;
+    font-size: 12px;
+  }
+  
+  .add{
+    background-color: rgb(37, 37, 104);
+    color: #eeeef2;
+    font-size: 14px;
+    cursor: pointer;
+    opacity: .4;
+    pointer-events: none;
+  }
+  
+  .add.active{
+    opacity: 1;
+    pointer-events: all;
+  }
+  
+  .tasks{
+    width: 100%;
+    margin-top: 40px;
+  }
+  
+  .items{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 4px;
+    box-shadow: 0 10px 10px rgb(8, 8, 8);
+    margin-bottom: 20px;
+  
+  }
+  
+  .items p{
+    font-size: 15px;
+    color: #0a0909;
+  }
+  
+  
+  .item-btn{
+    display: flex;
+    align-items: center;
+  }
+  
+  .item-btn i{
+    color: rgb(37, 37, 104) ;
+    font-size: 20px;
+    cursor: pointer;
+  }
